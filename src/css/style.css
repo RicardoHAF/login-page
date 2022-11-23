@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #1d133b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login-image{
+    width: 35vw;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgb(60, 216, 216);
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #483b6b;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #1c2e2e;
+}
+
+.card-login > h1 {
+    color: rgb(43, 233, 160);
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #7361a5;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: rgb(53, 247, 189);
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+.textfield > input::placeholder{
+    color: rgb(52, 215, 166);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 750;
+    letter-spacing: 2px;
+    color: #4f1b53cc;
+    background: rgb(69, 230, 192);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(37, 204, 213);
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50%;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
